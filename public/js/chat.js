@@ -48,7 +48,6 @@ jQuery('#message-form').on('submit', function(e){
   e.preventDefault();
 
   socket.emit('createMessage', {
-    from: jQuery('[name=ime]').val(),
     text: jQuery('[name=message]').val()
   }), function () {
 
